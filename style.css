@@ -35,6 +35,74 @@ main #division-2-list ul{
     list-style-type: none;
 }
 
+.clearfix::after{
+  content: "";
+  clear: both !important;
+  display: block;
+}
+
+/* container */
+
+.container{
+    width: 120rem;
+    margin: 0 auto;
+    padding-left: .6rem;
+    padding-right: .6rem;
+    padding-bottom: 2rem;
+}
+
+nav{
+    background-color: #007bff;
+    color: #fff;
+    padding: 3rem 0 3rem 0;
+    position: fixed !important;
+    width: 100%;
+    z-index: 1;
+    height: 10%;
+}
+
+.btk-akademi{
+    color: #fff;
+    font-size: 2.4rem;
+}
+
+#menu{
+    float: right;
+}
+
+#menu li{
+    display: inline-block;
+    margin:0 12rem 12rem 0;
+}
+
+#menu i {
+    margin-right: .5rem;
+}
+
+#menu i:hover{
+    color: #007bff;
+    background-color: #fff;
+}
+
+#menu a{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    transition: all .3s;
+}
+
+#menu a:hover{
+    color: #007bff;
+    background-color: #fff;
+}
+
+
+#logo{
+    float: left;
+}
+
+
 /* header */
 header {
     height: 80rem;
@@ -76,12 +144,15 @@ p{
     padding: 1.7rem 3.4rem;
     border: 1px solid rgb(255, 212, 59);
     white-space: nowrap;
+    box-shadow: 1px 2px 3px 2px black;
 
 }
 
 .btn-header:hover{
     background-color: #fff;
     color:#007bff;
+    box-shadow: 1px 2px 3px 6px black;
+
 }
 
 /* section - 1  */
@@ -119,6 +190,35 @@ p{
     font-weight: bold !important;
 }
 
+/* section 3 */
+
+#division-3-career{
+    width: 100%;
+    height: 50rem;
+    margin: 2rem 0;
+}
+
+#left-main{
+    float: left;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    background-color: tomato !important;
+}
+
+#right-main{
+    float: left;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    background-color: orangered !important;
+
+
+}
+
+#right-main>ul{
+    list-style: none !important;
+}
 
 
 
