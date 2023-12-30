@@ -102,6 +102,17 @@ nav{
     float: left;
 }
 
+#logo-image{
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50% 50%;
+}
+
+#logo-image:hover{
+    opacity: .8;
+    box-shadow: 1px 1px 1px 1px red;
+}
+
 
 /* header */
 header {
@@ -220,6 +231,42 @@ p{
     list-style: none !important;
 }
 
+/* top menü */
+
+#bottom{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#bottom a{
+    position: fixed;
+    width: 90px;
+    height: 30px;
+    bottom: 0;
+    right: 0;
+    border: 1px solid red;
+    background-color: #007bff;
+    color: white;
+    margin-right: 12px;
+    margin-bottom: 8px;
+    transition: all .4s;
+}
+
+#bottom a:hover{
+    box-shadow: 1px 2px 3px 2px black;
+    background-color: #007bff;
+    color: black;
+}
+
+
+.upperCase{
+    text-transform: uppercase;
+}
+
+.lowerCase{
+    text-transform: lowercase;
+}
 
 
 
