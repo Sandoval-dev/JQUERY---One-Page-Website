@@ -4,13 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="one pages">
+    <meta name="keywords" content="html5,css3,jquery">
+    <meta name="author" content="Osman Erdem Kılıç">
+    <meta name="identifier-URL" content="https://www.site.com.tr">
+    <meta name="robots" content="noindex">
+
     <title>One Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+    <script src="main.js"></script>
+
 </head>
 
 <body>
@@ -26,9 +42,35 @@
                     <li class="menu-item"><a href="#"> <i class="fa-solid fa-house"></i>Home</a></li>
                     <li class="menu-item"><a href="#division-3-career"><i class="fa-solid fa-user"></i>Career</a></li>
                     <li class="menu-item"><a href="#division-1-main"><i class="fa-solid fa-newspaper"></i>News</a></li>
+                    <li class="menu-item"><a href="#sss"><i class="fas fa-newspaper">S.S.S</i></a></li>
+                    <li class="menu-item"><a href="#about-me"><i class="fas fa-newspaper">About Me</i></a></li>
                     <li class="menu-item"><a href="#form-email"><i class="far fa-id-card"></i>Contact</a></li>
+                    <li class="menu-item"> <button id="dialogButton"><i class="fa-solid fa-user"></i></button></li>
                 </ul>
             </div>
+
+            <div id="dialog">
+                <form action="#" method="post">
+
+                    <div class="form-group">
+                        <span>Email adresiniz</span>
+                        <input id="login_email" name="login_email" type="email" class="form-control"
+                            placeholder="Emailiniz"></div>
+                    <small class="text-danger">Email girmediniz..</small>
+            </div>
+            <div class="form-group">
+
+        </div>
+
+
+        </form>
+        </div>
+
+
+
+        <div id="bar-icon">
+            <i class="fas fa-bars"></i>
+        </div>
         </div>
 
     </nav>
@@ -61,7 +103,8 @@
                         <img src="image/0.jpg" alt="">
                         <div class="area-div">
                             <h3>Backend</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti incidunt aliquid
+                            <p class="line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
+                                incidunt aliquid
                                 molestiae exercitationem et ipsum, quod excepturi, repellendus harum eveniet
                                 necessitatibus optio voluptatum quis libero quo ipsa explicabo quia facilis. Dolore
                                 ullam ratione quibusdam quae vel illo quas enim consequatur?</p>
@@ -73,7 +116,8 @@
                         <img src="image/1.jpg" alt="">
                         <div class="area-div">
                             <h3>Siber Güvenlik</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae soluta ratione unde
+                            <p class="line-clamp-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                                soluta ratione unde
                                 quam porro expedita, eligendi molestias perspiciatis quasi, in ullam magnam illo
                                 doloremque consequatur accusantium tenetur aspernatur ut est aliquid? Corporis fugit et
                                 similique id accusamus adipisci laboriosam sequi!</p>
@@ -85,7 +129,8 @@
                         <img src="image/2.jpg" alt="">
                         <div class="area-div">
                             <h3>Oyun Geliştirme</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsam iusto architecto id
+                            <p class="line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsam
+                                iusto architecto id
                                 numquam delectus cumque quia, animi aut incidunt quis. At possimus saepe facilis quas
                                 eum quisquam harum ducimus deleniti, nostrum expedita, nesciunt, eius inventore. At quam
                                 incidunt sint.</p>
@@ -97,7 +142,8 @@
                         <img src="image/0.jpg" alt="">
                         <div class="area-div">
                             <h3>Frontend</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quis ratione
+                            <p class="line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                                quis ratione
                                 quibusdam laudantium illo. Voluptates delectus ad illum natus exercitationem accusantium
                                 quo impedit, tempora alias minus magnam ab, suscipit, doloribus autem quaerat accusamus
                                 praesentium. Porro quod deserunt magnam similique veritatis.</p>
@@ -130,6 +176,27 @@
                 </ul>
             </div>
         </section>
+
+        <h3 id="about-me">HAKKIMIZDA</h3>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">About</a></li>
+                <li><a href="#tabs-2">Vision</a></li>
+                <li><a href="#tabs-3">Mission</a></li>
+            </ul>
+            <div id="tabs-1">
+                <p>Hakkımızda Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div id="tabs-2">
+                <p>Vizyonumuz Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptatem obcaecati
+                    architecto.</p>
+            </div>
+            <div id="tabs-3">
+                <p>Misyonumuz Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+
+
         <section id="division-1-main">
             <div class="piece">
                 <h2 style="color: white; text-transform:uppercase; padding-top:10rem">Hakkımızda</h2>
@@ -143,14 +210,44 @@
 
         <section id="division-contact" style="background-color: orange !important; padding-top:10rem;">
             <div class="piece">
-            <h1 style="color: white; text-transform:uppercase;">Misyon / Vizyon</h1>
-            <p style="text-align:justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, possimus. Ex, obcaecati natus
-                quasi repellendus fugiat at quae iusto facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sit? Ex voluptas necessitatibus odit et?</p>
+                <h1 style="color: white; text-transform:uppercase;">Misyon / Vizyon</h1>
+                <p style="text-align:justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium,
+                    possimus. Ex, obcaecati natus
+                    quasi repellendus fugiat at quae iusto facere. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Temporibus, sit? Ex voluptas necessitatibus odit et?</p>
             </div>
         </section>
+        <h2 id="sss">S.S.S Alanı </h2>
+        <div id="accordion">
+            <h3>Deneme-1</h3>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, aspernatur.
+                </p>
+            </div>
+            <h3>Deneme-2</h3>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, aspernatur.
+                </p>
+            </div>
+            <h3>Deneme-3</h3>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, aspernatur.
+                </p>
+            </div>
+            <h3>Deneme-4</h3>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, aspernatur.
+                </p>
+            </div>
+        </div>
 
-        <section id="form-email">
-
+        <section id="form-email" class="clearfix">
+            <h1>İletişim</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ut maiores corporis?</p>
             <div class="col100 clearfix" style="margin-bottom: 5rem;">
                 <h4 style="color:black;">MAPS</h4>
                 <div class="mapouter">
@@ -249,6 +346,9 @@
             </address>
         </div>
     </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
 </body>
 
 </html>
